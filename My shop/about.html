@@ -15,19 +15,41 @@
         <button type="button" onclick="login()">Login</button>
 
     </form>
+    <div id="myDiv" style="display: none;">
+        <h1>News Paper</h1>
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="author"><br><br>
+        <label for="newsTitle">News Title:</label>
+        <input type="text" id="newsTitle"><br><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description"><br><br>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" accept="image/*" required><br><br>
+        <input type="submit" value="Submit" onclick="submit()"><br><br>
+    </div>
 
 
+    <div id="comment" style="display: none;">
+        <form id="comment-form">
+            <label for="cname">Name:</label>
+            <input type="text" id="cname" name="cname" required><br>
+    
+            <label for="userComment">Comment:</label><br>
+            <textarea id="userComment" name="userComment" rows="4" cols="50" required></textarea><br>
+    
+            <input type="button" value="Enter" onclick="enter()">
+        </form>
+    </div>
 
-<div id="myDiv" style="display: none;">
-    <h1>History</h1>
-    <p><strong>Welcome to Shilajit Haven - Preserving the Essence of the Himalayas :</strong></p>
-    <p>Nestled in the heart of the pristine Himalayan mountains, Shilajit Haven is more than just a shop; it's a tribute to the timeless secrets hidden in these majestic peaks. Our story begins with a profound love for nature and a deep appreciation for the traditions of the Himalayan people.</p>
-    <p><strong>A Glimpse into Our Past</strong></p>
-    <p>In the early 2000s, our founder, Dr. Aanya, embarked on an expedition to explore the hidden wonders of the Himalayas. Driven by a passion for holistic wellness, she sought to uncover the age-old tradition of gathering Shilajit – the "Conqueror of Mountains." This tar-like substance, enriched with vital minerals and nutrients, has been revered for centuries as a source of vitality and healing in the Himalayan culture.
+    <div id="display-comment" style="display: none;">
+        <h2>Entered Data</h2>
+        <p><strong>Name:</strong> <span id="display-cname"></span></p>
+        <p><strong>Comment:</strong> <span id="display-comment-text"></span></p>
+    </div>
 
-        Through her journey, Dr. Aanya learned from local healers and collectors, gaining insights into the meticulous harvesting methods and the mystical legends that shroud Shilajit's origins. She realized that the world needed access to this elixir of the Himalayas, and thus, Shilajit Haven was born</p>
-</div>
 
 <script src="code.js"></script>
 </body>
 </html>
+
+
